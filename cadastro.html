@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Crie sua conta na Comunidade." />
+    <title>Criar conta | Comunidade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="auth-page">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Comunidade - início">
+        <img src="arquivos/logo-comunidade.png" alt="Comunidade" />
+      </a>
+      <a class="button button-light auth-back" href="index.html">Voltar ao início</a>
+    </header>
+
+    <main class="auth-layout">
+      <section class="auth-message">
+        <p class="eyebrow blue-eyebrow">faça parte da comunidade</p>
+        <h1>Crie sua conta.<br /><strong>Encontre seu lugar.</strong></h1>
+        <p>Cadastre-se gratuitamente para descobrir comunidades, acompanhar conversas e criar conexões que fazem sentido para você.</p>
+        <div class="signup-points">
+          <span>✓ Acesso gratuito</span>
+          <span>✓ Comunidades inclusivas</span>
+          <span>✓ Seus dados protegidos</span>
+        </div>
+      </section>
+
+      <form class="signup-form" id="signup-form">
+        <h2>Comece agora</h2>
+        <p class="form-caption">Preencha seus dados para criar sua conta.</p>
+        <label for="name">Nome completo</label>
+        <input id="name" name="name" type="text" placeholder="Como podemos te chamar?" autocomplete="name" required />
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" placeholder="voce@email.com" autocomplete="email" required />
+        <label for="password">Senha</label>
+        <input id="password" name="password" type="password" placeholder="Mínimo de 8 caracteres" minlength="8" autocomplete="new-password" required />
+        <label class="checkbox-label" for="terms">
+          <input id="terms" name="terms" type="checkbox" required />
+          <span>Concordo com os termos de uso e a política de privacidade.</span>
+        </label>
+        <button class="button button-primary submit-button" type="submit">Criar minha conta <span aria-hidden="true">→</span></button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+        <p class="login-hint" id="entrar">Já tem uma conta? <a href="login.html">Entrar</a></p>
+      </form>
+    </main>
+    <script src="js/script.js?v=2"></script>
+  </body>
+</html>

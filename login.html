@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Entre na sua conta da Comunidade." />
+    <title>Entrar | Comunidade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="auth-page">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Comunidade - início">
+        <img src="arquivos/logo-comunidade.png" alt="Comunidade" />
+      </a>
+      <a class="button button-light auth-back" href="index.html">Voltar ao início</a>
+    </header>
+
+    <main class="auth-layout login-layout">
+      <section class="auth-message">
+        <p class="eyebrow blue-eyebrow">que bom ter você de volta</p>
+        <h1>Entre na sua conta.<br /><strong>Continue conectado.</strong></h1>
+        <p>Retome suas conversas, acompanhe suas comunidades e encontre novas conexões no seu espaço.</p>
+        <div class="signup-points">
+          <span>✓ Conversas que importam</span>
+          <span>✓ Pessoas com os mesmos interesses</span>
+          <span>✓ Um espaço feito para você</span>
+        </div>
+      </section>
+
+      <form class="signup-form" id="login-form">
+        <h2>Bem-vindo de volta</h2>
+        <p class="form-caption">Entre com seus dados para continuar.</p>
+        <label for="login-email">E-mail</label>
+        <input id="login-email" name="email" type="email" placeholder="voce@email.com" autocomplete="email" required />
+        <label for="login-password">Senha</label>
+        <input id="login-password" name="password" type="password" placeholder="Digite sua senha" autocomplete="current-password" required />
+        <label for="login-role">Entrar como</label>
+        <select id="login-role" name="role" required>
+          <option value="usuario">Usuário</option>
+          <option value="dono">Dono de comunidade</option>
+          <option value="admin">Administrador</option>
+        </select>
+        <div class="login-options">
+          <label class="checkbox-label" for="remember">
+            <input id="remember" name="remember" type="checkbox" />
+            <span>Lembrar de mim</span>
+          </label>
+          <a href="#recuperar">Esqueci minha senha</a>
+        </div>
+        <button class="button button-primary submit-button" type="submit">Entrar na conta <span aria-hidden="true">→</span></button>
+        <p class="form-status login-status" role="status" aria-live="polite"></p>
+        <p class="login-hint">Ainda não tem uma conta? <a href="cadastro.html">Criar conta</a></p>
+      </form>
+    </main>
+    <script src="js/script.js?v=3"></script>
+  </body>
+</html>

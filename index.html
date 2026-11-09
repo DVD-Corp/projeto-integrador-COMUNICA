@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Comunidade - comunidades que fazem sentido para você." />
+    <title>Comunidade | Comunidades para todos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Comunidade - início">
+        <img src="arquivos/logo-comunidade.png" alt="Comunidade" />
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Abrir menu</span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
+        <a href="#baixar">Baixar</a>
+        <a href="#exclusivos">Exclusivos</a>
+        <a href="#sobre">Saiba mais</a>
+        <a href="#protecao">Proteção</a>
+        <a href="#suporte">Suporte</a>
+        <a href="#desenvolvimento">Desenvolvimento</a>
+        <a href="#como-funciona">Como funciona</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="button button-outline" href="cadastro.html">Cadastrar</a>
+        <a class="button button-light" href="login.html">Entrar</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">uma rede feita para pertencer</p>
+          <h1>Conecte-se às<br /><strong>comunidades que fazem<br />sentido para você.</strong></h1>
+          <p class="hero-description">
+            Descubra, participe e crie comunidades em português,<br class="desktop-only" />
+            com foco em inclusão, acessibilidade e acesso gratuito.
+          </p>
+          <p class="hero-subtitle">Transforme o seu espaço com exclusividade, coleção de alta-qualidade</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#comunidades">
+              <span aria-hidden="true">◉</span> Explorar comunidades
+            </a>
+            <a class="button button-light" href="cadastro.html">
+              <span aria-hidden="true">+</span> Criar comunidade
+            </a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="hero-dot"></div>
+          <div class="hero-card">
+            <span>+</span>
+            <p>encontre<br />seu lugar</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="comunidades" class="community-section">
+        <div class="section-heading">
+          <p class="section-rule" aria-hidden="true"></p>
+          <h2>Encontre seu espaço</h2>
+          <p>Aqui, você pode aprender, compartilhar, se apoiar e crescer com pessoas que têm os mesmos interesses e objetivos que você.</p>
+        </div>
+        <div class="community-grid">
+          <article class="community-card">
+            <span class="card-icon">⌂</span>
+            <h3>Educação</h3>
+            <p>Acesse conteúdos, tire dúvidas e compartilhe conhecimento.</p>
+            <a href="#exclusivos">Saiba mais <span>→</span></a>
+          </article>
+          <article class="community-card">
+            <span class="card-icon">&lt;&gt;</span>
+            <h3>Tecnologia</h3>
+            <p>Conecte-se com quem ama inovação e desenvolvimento.</p>
+            <a href="#como-funciona">Saiba mais <span>→</span></a>
+          </article>
+          <article class="community-card">
+            <span class="card-icon">♧</span>
+            <h3>Inclusão</h3>
+            <p>Encontre apoio, compartilhe experiências e faça parte.</p>
+            <a href="#sobre">Saiba mais <span>→</span></a>
+          </article>
+          <article class="community-card">
+            <span class="card-icon">♡</span>
+            <h3>Bem-estar</h3>
+            <p>Cuide da sua saúde mental, emocional e social.</p>
+            <a href="#sobre">Saiba mais <span>→</span></a>
+          </article>
+        </div>
+      </section>
+
+      <section id="sobre" class="about-section">
+        <div>
+          <p class="eyebrow blue-eyebrow">por uma internet mais humana</p>
+          <h2>Seu espaço.<br /><span>Do seu jeito.</span></h2>
+        </div>
+        <p>Na Comunidade, toda voz tem espaço. Criamos ferramentas para aproximar pessoas, incentivar a colaboração e tornar a internet mais inclusiva.</p>
+      </section>
+
+      <section id="cadastro" class="signup-section">
+        <div class="signup-intro">
+          <p class="eyebrow blue-eyebrow">faça parte da comunidade</p>
+          <h2>Crie sua conta.<br /><span>Encontre seu lugar.</span></h2>
+          <p>Cadastre-se gratuitamente para descobrir comunidades, acompanhar conversas e criar conexões que fazem sentido para você.</p>
+          <div class="signup-points">
+            <span>✓ Acesso gratuito</span>
+            <span>✓ Comunidades inclusivas</span>
+            <span>✓ Seus dados protegidos</span>
+          </div>
+        </div>
+        <form class="signup-form" id="signup-form">
+          <h3>Comece agora</h3>
+          <p class="form-caption">Preencha seus dados para criar sua conta.</p>
+          <label for="name">Nome completo</label>
+          <input id="name" name="name" type="text" placeholder="Como podemos te chamar?" autocomplete="name" required />
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" placeholder="voce@email.com" autocomplete="email" required />
+          <label for="password">Senha</label>
+          <input id="password" name="password" type="password" placeholder="Mínimo de 8 caracteres" minlength="8" autocomplete="new-password" required />
+          <label class="checkbox-label" for="terms">
+            <input id="terms" name="terms" type="checkbox" required />
+            <span>Concordo com os termos de uso e a política de privacidade.</span>
+          </label>
+          <button class="button button-primary submit-button" type="submit">Criar minha conta <span aria-hidden="true">→</span></button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+          <p class="login-hint">Já tem uma conta? <a href="login.html">Entrar</a></p>
+        </form>
+      </section>
+    </main>
+
+    <footer id="suporte" class="site-footer">
+      <a class="brand" href="#inicio"><img src="arquivos/logo-comunidade.png" alt="Comunidade" /></a>
+      <p>Conexões que fazem sentido.</p>
+      <small>© 2026 Comunidade</small>
+    </footer>
+    <script src="js/script.js?v=2"></script>
+  </body>
+</html>
