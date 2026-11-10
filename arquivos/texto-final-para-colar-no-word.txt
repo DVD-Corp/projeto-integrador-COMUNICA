@@ -1,0 +1,256 @@
+DOCUMENTO FINAL — COMUNIDADE
+Texto revisado para colar no Word
+Versão 0.3.3 — 10 de novembro de 2026
+
+2. LEVANTAMENTO DOS REQUISITOS
+
+2.1 Escopo
+
+Este capítulo apresenta o escopo da plataforma Comunidade e os requisitos que orientaram o protótipo entregue. A solução tem como objetivo aproximar pessoas com interesses em comum por meio de comunidades digitais inclusivas, acessíveis e gratuitas.
+
+O escopo desta versão inclui a landing page, o cadastro demonstrativo, o login com seleção de perfil, a área logada, a exploração de comunidades, a pesquisa, os filtros por categoria, a participação em comunidades, o perfil do usuário, as configurações de acessibilidade, a criação simulada de comunidades e o painel do criador.
+
+O protótipo foi desenvolvido com HTML5, CSS3 e JavaScript. Pode ser executado em um navegador por meio de um servidor local e possui workflow de publicação no GitHub Pages. Os dados são estáticos e as ações são simuladas no navegador.
+
+Não fazem parte do escopo desta entrega a autenticação real, a persistência em banco de dados, o envio de e-mails, a integração com API, o armazenamento permanente de mensagens e a implantação de recursos de produção.
+
+2.2 Modelagem do Processo de Negócio
+
+Antes da plataforma, uma pessoa interessada em determinado tema precisava procurar grupos em diferentes canais, verificar se o conteúdo era relevante, solicitar participação e acompanhar as conversas de maneira dispersa. Para criar uma comunidade, também precisava escolher um nome, definir uma descrição, convidar pessoas e organizar as informações em ferramentas diferentes.
+
+Com a proposta da Comunidade, o processo é organizado em uma única experiência. O usuário acessa a apresentação inicial, cria uma conta ou realiza login, escolhe seu perfil demonstrativo, explora comunidades, pesquisa por palavras-chave, aplica filtros, consulta os detalhes e participa de um grupo. O usuário que deseja criar uma comunidade informa nome, descrição e categoria. O dono acompanha indicadores e acessa o painel do criador.
+
+Fluxo principal:
+
+1. Acessar a landing page.
+2. Escolher criar uma conta ou entrar.
+3. Preencher o formulário correspondente.
+4. Acessar a área logada.
+5. Explorar ou pesquisar comunidades.
+6. Aplicar filtros por categoria.
+7. Participar de uma comunidade ou abrir a comunidade ativa.
+8. Consultar perfil, mensagens, configurações e painel do criador.
+
+2.3 Normas, Processos e Formulários Utilizados no Processo de Negócio
+
+Para o desenvolvimento desta versão foram considerados o roteiro do Projeto Integrador, os requisitos levantados pela equipe, as telas de referência armazenadas na pasta arquivos, as boas práticas de acessibilidade digital e os padrões de navegação em páginas web.
+
+Não há formulário externo ou documento operacional necessário para executar o protótipo. Os formulários existentes são internos à aplicação:
+
+• Cadastro: nome completo, e-mail, senha e aceite dos termos.
+• Login: e-mail, senha, perfil e opção de lembrar o acesso.
+• Criação de comunidade: nome, descrição e categoria.
+
+2.4 Descrição dos Requisitos de Usuário
+
+Os requisitos abaixo descrevem as necessidades do usuário de forma geral, sem detalhar a implementação técnica.
+
+2.4.1 Lista de Requisitos do Usuário
+
+2.4.1.1 Requisitos Funcionais de Usuário
+
+RU01 — O usuário deve poder criar uma conta informando nome, e-mail, senha e aceite dos termos.
+
+RU02 — O usuário deve poder realizar login utilizando e-mail, senha e um perfil demonstrativo.
+
+RU03 — O usuário deve poder visualizar uma apresentação da plataforma e acessar as telas de cadastro e login.
+
+RU04 — O usuário deve poder encontrar comunidades recomendadas na Home.
+
+RU05 — O usuário deve poder pesquisar comunidades e pessoas por texto.
+
+RU06 — O usuário deve poder filtrar comunidades por categoria.
+
+RU07 — O usuário deve poder consultar informações da comunidade, incluindo descrição, membros, feed, eventos e regras.
+
+RU08 — O usuário deve poder participar ou deixar de participar de uma comunidade no protótipo.
+
+RU09 — O usuário deve poder visualizar seu perfil, interesses e comunidades participantes.
+
+RU10 — O usuário deve poder consultar a área de mensagens.
+
+RU11 — O usuário deve poder criar uma comunidade informando nome, descrição e categoria.
+
+RU12 — O dono de comunidade deve poder consultar indicadores e atalhos do painel do criador.
+
+RU13 — O administrador deve poder visualizar a área administrativa demonstrativa.
+
+RU14 — O usuário deve poder ativar preferências de alto contraste e texto maior.
+
+2.4.1.2 Requisitos Não Funcionais de Usuário
+
+RU-NF01 — A interface deve ser simples de aprender e utilizar.
+
+RU-NF02 — As páginas devem apresentar layout responsivo para telas maiores e dispositivos móveis.
+
+RU-NF03 — Os textos, botões e campos devem possuir contraste e estados de foco adequados.
+
+RU-NF04 — A navegação deve ser compreensível e manter uma hierarquia visual consistente.
+
+RU-NF05 — O protótipo deve funcionar em navegadores modernos sem instalação de dependências.
+
+RU-NF06 — Os formulários devem informar claramente os campos obrigatórios e o resultado das ações.
+
+RU-NF07 — As permissões demonstrativas devem alterar a área apresentada conforme o perfil selecionado.
+
+RU-NF08 — A documentação deve informar as limitações da solução e diferenciar simulação de funcionalidade persistente.
+
+2.4.2 Descrição dos Atores
+
+2.4.2.1 Usuário
+
+Realiza cadastro demonstrativo, login, pesquisa comunidades, aplica filtros, consulta o feed, participa de grupos, visualiza o próprio perfil, acessa mensagens e configura preferências de acessibilidade.
+
+2.4.2.2 Dono de Comunidade
+
+Possui as funções do usuário e acessa o painel do criador, onde consulta indicadores e atalhos de gerenciamento da comunidade.
+
+2.4.2.3 Administrador
+
+Possui uma visão demonstrativa da plataforma, com saudação administrativa, indicadores e acesso à área de administração.
+
+2.5 Estrutura Analítica do Projeto
+
+O projeto foi organizado nas seguintes etapas:
+
+1. Levantamento do problema e dos requisitos.
+2. Definição da identidade visual e dos conteúdos.
+3. Desenvolvimento da landing page.
+4. Desenvolvimento dos formulários de cadastro e login.
+5. Desenvolvimento da área logada.
+6. Implementação da pesquisa e dos filtros.
+7. Implementação da participação e da criação simulada de comunidade.
+8. Implementação das preferências de acessibilidade.
+9. Validação da navegação, dos scripts e da responsividade.
+10. Revisão da documentação e preparação da entrega.
+
+2.6 Estimativa de Custo do Projeto
+
+Esta versão é um protótipo acadêmico desenvolvido com ferramentas gratuitas ou já disponíveis à equipe. Não foi registrado orçamento financeiro de colaboradores, equipamentos, energia ou infraestrutura.
+
+Foram utilizados computadores pessoais, Visual Studio Code, navegador web, Git, GitHub e GitHub Pages. Como não há contratação ou aquisição específica registrada, os custos financeiros do protótipo não foram calculados. Caso a disciplina exija uma planilha de custos, ela deve ser preenchida pela equipe com os valores reais de horas e recursos utilizados.
+
+2.7 Estudo de Viabilidade
+
+O protótipo é tecnicamente viável para a finalidade acadêmica proposta. Pode ser executado localmente com o comando python -m http.server 5500, não exige dependências adicionais e possui workflow de publicação no GitHub Pages.
+
+Os principais riscos para uma versão de produção são a ausência de backend, banco de dados, autenticação real, persistência de informações, moderação, segurança e integração com serviços externos. Esses riscos devem ser tratados em uma próxima fase.
+
+Parecer: o projeto é viável como protótipo frontend e está adequado para demonstração acadêmica. A implantação em produção depende da evolução da arquitetura e da implementação dos serviços de backend.
+
+2.8 Modelo de Projeto Canvas
+
+Proposta de valor: oferecer um espaço digital inclusivo para descobrir, criar e participar de comunidades.
+
+Público-alvo: pessoas que desejam encontrar grupos relacionados a seus interesses, aprender, compartilhar experiências e criar conexões.
+
+Canais: site responsivo publicado na web e acesso local para demonstração.
+
+Relacionamento: navegação simples, participação em comunidades, feed, mensagens, perfil e preferências de acessibilidade.
+
+Recursos principais: páginas HTML, estilos CSS, scripts JavaScript, imagens, GitHub e GitHub Pages.
+
+Atividades principais: descoberta, pesquisa, filtragem, participação, criação simulada e administração demonstrativa de comunidades.
+
+Custos: desenvolvimento acadêmico com ferramentas gratuitas e recursos já disponíveis.
+
+Receitas: não aplicável ao protótipo acadêmico.
+
+3. REQUISITOS DO SISTEMA
+
+3.1 Requisitos Funcionais do Sistema
+
+RF01 — O sistema deve apresentar a landing page em index.html.
+RF02 — O sistema deve permitir o acesso às páginas de cadastro e login.
+RF03 — O sistema deve validar campos obrigatórios dos formulários.
+RF04 — O sistema deve exigir senha com pelo menos oito caracteres no cadastro.
+RF05 — O sistema deve encaminhar o cadastro concluído para a área logada.
+RF06 — O sistema deve encaminhar o login concluído para app.html com o perfil selecionado.
+RF07 — O sistema deve alterar saudação e navegação conforme o perfil.
+RF08 — O sistema deve alternar entre as telas da área logada sem recarregar a página.
+RF09 — O sistema deve filtrar comunidades por texto e categoria.
+RF10 — O sistema deve alternar o estado do botão Participar.
+RF11 — O sistema deve exibir confirmação após a criação simulada de comunidade.
+RF12 — O sistema deve permitir ativar alto contraste e texto maior.
+
+3.2 Requisitos Não Funcionais do Sistema
+
+RNF01 — O sistema deve utilizar HTML5, CSS3 e JavaScript.
+RNF02 — O sistema deve funcionar sem instalação de dependências.
+RNF03 — O sistema deve apresentar comportamento responsivo.
+RNF04 — O sistema deve utilizar textos e controles com contraste legível.
+RNF05 — O sistema deve funcionar em navegadores modernos.
+RNF06 — O sistema deve apresentar mensagens de status em formulários.
+RNF07 — O sistema deve manter os dados simulados apenas no navegador.
+
+3.3 Regras de Negócio
+
+RN01 — O acesso demonstrativo utiliza e-mail, senha e perfil selecionado.
+RN02 — O cadastro exige nome, e-mail, senha mínima e aceite dos termos.
+RN03 — A participação em comunidade pode ser alternada no protótipo.
+RN04 — A criação simulada exige nome e categoria.
+RN05 — O perfil administrativo altera a identificação e os recursos exibidos.
+
+4. CASOS DE USO
+
+UC01 — Criar conta
+Ator: Usuário.
+Fluxo: acessar cadastro, preencher os campos, aceitar os termos, enviar o formulário e ser encaminhado à área logada.
+
+UC02 — Realizar login
+Ator: Usuário, Dono de Comunidade ou Administrador.
+Fluxo: informar e-mail, senha e perfil, enviar o formulário e acessar a área correspondente.
+
+UC03 — Explorar comunidades
+Ator: Usuário.
+Fluxo: acessar Home ou Explorar, pesquisar por texto, selecionar categoria e consultar os cards disponíveis.
+
+UC04 — Participar de comunidade
+Ator: Usuário.
+Fluxo: selecionar Participar e visualizar o estado Participando. A ação pode ser alternada no protótipo.
+
+UC05 — Criar comunidade
+Ator: Dono de Comunidade ou usuário autenticado.
+Fluxo: acessar Criar comunidade, informar nome, descrição e categoria, enviar o formulário e visualizar a confirmação local.
+
+UC06 — Configurar acessibilidade
+Ator: Usuário.
+Fluxo: acessar Configuração e ativar alto contraste ou texto maior.
+
+5. IMPLEMENTAÇÃO DAS PÁGINAS WEB
+
+5.1 Páginas Web
+
+index.html — Landing page com apresentação do projeto, comunidades, informações sobre a plataforma e formulário de cadastro.
+
+cadastro.html — Formulário de criação de conta com nome, e-mail, senha e aceite dos termos.
+
+login.html — Formulário de login com seleção entre Usuário, Dono de comunidade e Administrador.
+
+app.html — Área logada com Home, Explorar, Mensagens, Minhas comunidades, Comunidade ativa, Perfil, Configuração, criação de comunidade e painel do criador.
+
+5.2 Diagrama de Navegação
+
+index.html → cadastro.html → app.html
+
+index.html → login.html → app.html
+
+app.html → Home
+app.html → Explorar
+app.html → Mensagens
+app.html → Minhas comunidades
+app.html → Comunidade ativa
+app.html → Perfil
+app.html → Configuração
+app.html → Criar comunidade
+app.html → Painel do criador
+
+5.3 Decisões de Design Digital
+
+O projeto utiliza azul como cor de destaque, fundos escuros, cartões com bordas suaves, tipografia sem serifa e hierarquia visual baseada em títulos, etiquetas e descrições. A interface possui estados de foco, layout responsivo, menu adaptável para telas menores, alto contraste e opção de texto maior.
+
+6. CONCLUSÃO
+
+A versão 0.3.3 substitui os campos de modelo por conteúdo baseado no protótipo efetivamente desenvolvido. A documentação apresenta o escopo, os requisitos, os atores, as regras de negócio, os casos de uso, a navegação, a implementação e as limitações da solução.
+
+O projeto está pronto para apresentação como protótipo frontend acadêmico. A evolução para produção deverá incluir backend, banco de dados, autenticação segura, persistência, testes automatizados e integração com serviços externos.

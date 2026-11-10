@@ -65,6 +65,7 @@ PI/
 ├── arquivos/
 │   ├── Comunidade-DSM1_PI-v0.2.1.docx
 │   ├── Comunidade-DSM1_PI-v0.3.3.docx
+│   ├── texto-final-para-colar-no-word.txt
 │   ├── img tela cadastro.jpeg
 │   ├── img tela login.jpeg
 │   ├── logo.jpeg
@@ -85,6 +86,7 @@ PI/
 
 Os documentos de levantamento e especificação ficam em `arquivos/`. O arquivo `Comunidade-DSM1_PI-v0.3.3.docx` é a versão final revisada da documentação acadêmica e substitui os campos de modelo por conteúdo baseado no protótipo entregue.
 O arquivo `Comunidade-DSM1_PI-v0.2.1.docx` foi mantido como versão anterior para histórico e comparação.
+Caso o Word continue exibindo campos do modelo, use o arquivo `texto-final-para-colar-no-word.txt`, que contém o texto revisado em UTF-8 para colagem direta.
 
 ## Organização da equipe e entrega no GitHub
 
