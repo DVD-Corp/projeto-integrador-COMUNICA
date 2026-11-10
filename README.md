@@ -64,8 +64,7 @@ As ações de autenticação, participação e criação são demonstrações lo
 PI/
 ├── arquivos/
 │   ├── Comunidade-DSM1_PI-v0.2.1.docx
-│   ├── Comunidade-DSM1_PI-v0.3.3.docx
-│   ├── texto-final-para-colar-no-word.txt
+│   ├── Comunidade-DSM1_PI-v0.3.4.docx
 │   ├── img tela cadastro.jpeg
 │   ├── img tela login.jpeg
 │   ├── logo.jpeg
@@ -84,7 +83,7 @@ PI/
 └── README.md
 ```
 
-Os documentos de levantamento e especificação ficam em `arquivos/`. O arquivo `Comunidade-DSM1_PI-v0.3.3.docx` é a versão final revisada da documentação acadêmica e substitui os campos de modelo por conteúdo baseado no protótipo entregue.
+Os documentos de levantamento e especificação ficam em `arquivos/`. O arquivo `Comunidade-DSM1_PI-v0.3.4.docx` é a versão final revisada da documentação acadêmica e substitui os campos de modelo por conteúdo baseado no protótipo entregue.
 O arquivo `Comunidade-DSM1_PI-v0.2.1.docx` foi mantido como versão anterior para histórico e comparação.
 O DOCX final foi validado como pacote Office e deve ser aberto diretamente no Word ou em editor compatível.
 
@@ -147,6 +146,6 @@ Este é um protótipo frontend para apresentação. Os dados são simulados no n
 - [x] README com instruções, funcionalidades, limitações e roteiro de apresentação.
 - [x] `.gitignore` configurado para arquivos temporários e artefatos locais.
 - [x] Workflow de publicação no GitHub Pages.
-- [x] Documentação final revisada em `arquivos/Comunidade-DSM1_PI-v0.3.3.docx`.
+- [x] Documentação final revisada em `arquivos/Comunidade-DSM1_PI-v0.3.4.docx`.
 - [ ] Confirmar no GitHub os colaboradores e o professor como colaborador.
 - [ ] Anexar ao trabalho o link do repositório e as evidências de histórico e pull request.
