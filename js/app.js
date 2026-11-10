@@ -10,6 +10,13 @@ const roleConfig = {
 
 const currentRole = roleConfig[role] || roleConfig.usuario;
 document.querySelector(".profile-mini strong").textContent = currentRole.name;
+const initials = currentRole.name
+  .split(" ")
+  .map((part) => part[0])
+  .join("")
+  .slice(0, 2);
+document.querySelector(".profile-mini .avatar").textContent = initials;
+document.querySelector(".top-actions .avatar").textContent = initials;
 const greeting = document.querySelector(".app-welcome h1");
 greeting.innerHTML = role === "usuario"
   ? "Olá, Ana. <span>Bom te ver!</span>"
@@ -45,10 +52,25 @@ document.querySelectorAll(".join-button").forEach((button) => {
     button.classList.toggle("joined");
   });
 });
+let selectedCategory = "Todas";
+let searchTerm = "";
+
+function updateCommunityCards() {
+  document.querySelectorAll(".app-community-card").forEach((card) => {
+    const matchesCategory = selectedCategory === "Todas"
+      || card.dataset.category === selectedCategory;
+    const matchesSearch = !searchTerm
+      || card.innerText.toLowerCase().includes(searchTerm);
+    card.hidden = !matchesCategory || !matchesSearch;
+  });
+}
+
 document.querySelectorAll(".filter-chip").forEach((chip) => {
   chip.addEventListener("click", () => {
     document.querySelectorAll(".filter-chip").forEach((item) => item.classList.remove("selected"));
     chip.classList.add("selected");
+    selectedCategory = chip.textContent.trim();
+    updateCommunityCards();
   });
 });
 document.querySelectorAll(".community-tabs button").forEach((tab) => tab.addEventListener("click", () => {
@@ -61,8 +83,17 @@ document.querySelector(".create-form")?.addEventListener("submit", (event) => {
   event.currentTarget.reset();
 });
 document.querySelector("#global-search")?.addEventListener("input", (event) => {
-  const term = event.target.value.toLowerCase();
-  document.querySelectorAll(".app-community-card").forEach((card) => {
-    card.hidden = term && !card.innerText.toLowerCase().includes(term);
+  searchTerm = event.target.value.trim().toLowerCase();
+  updateCommunityCards();
+});
+
+document.querySelectorAll(".setting-row input").forEach((setting) => {
+  setting.addEventListener("change", () => {
+    if (setting.closest(".setting-row").textContent.includes("Alto contraste")) {
+      document.body.classList.toggle("high-contrast", setting.checked);
+    }
+    if (setting.closest(".setting-row").textContent.includes("Texto maior")) {
+      document.body.classList.toggle("large-text", setting.checked);
+    }
   });
 });

@@ -13,7 +13,20 @@
   background: var(--blue);
 }
 
+.app-page.high-contrast { background: #000; color: #fff; }
+.app-page.high-contrast .app-sidebar,
+.app-page.high-contrast .app-topbar,
+.app-page.high-contrast .side-card,
+.app-page.high-contrast .app-community-card { border-color: #fff; }
+.app-page.large-text { font-size: 112%; }
+
 * { box-sizing: border-box; }
+.app-community-card .community-info { background: #17233b; }
+.app-community-card .tag { color: #a9caff; font-weight: 700; }
+.app-community-card .community-info h3 { color: #ffffff; }
+.app-community-card .community-info p { color: #d3dced; }
+.app-community-card .card-footer { color: #e2e9f5; }
+.app-community-card .join-button { background: #1b65d8; color: #ffffff; }
 html { scroll-behavior: smooth; }
 body { margin: 0; background: var(--ink); }
 a { color: inherit; text-decoration: none; }
