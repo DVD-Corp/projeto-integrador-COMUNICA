@@ -21,7 +21,7 @@ const formStatus = document.querySelector(".form-status");
 if (signupForm && formStatus) {
   signupForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    formStatus.textContent = "Cadastro pronto! Em breve você receberá um e-mail de confirmação.";
+    formStatus.textContent = "Cadastro realizado! Estamos abrindo seu espaço.";
     signupForm.reset();
     window.setTimeout(() => { window.location.href = "app.html"; }, 700);
   });
@@ -39,3 +39,8 @@ if (loginForm && loginStatus) {
     window.setTimeout(() => { window.location.href = `app.html?role=${role}`; }, 700);
   });
 }
+
+document.querySelector(".login-options a")?.addEventListener("click", (event) => {
+  event.preventDefault();
+  if (loginStatus) loginStatus.textContent = "A recuperação de senha não está disponível neste protótipo.";
+});

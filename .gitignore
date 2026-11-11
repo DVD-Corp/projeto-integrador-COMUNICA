@@ -1,0 +1,16 @@
+# Sistema operacional e editores
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Dependências e artefatos locais
+node_modules/
+dist/
+build/
+coverage/
+*.log
+
+# Arquivos temporários do Office
+~$*.docx
+~$*.xlsx
+~$*.pptx
